@@ -1,0 +1,56 @@
+.contenedor {
+  border: solid 1px black;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cabecera{
+  display: flex;
+  justify-content: space-between;
+  postion: relative;
+  height: 200px; 
+}
+
+.cabecera img{
+  width: 100px;
+}
+.titulo_cabecera{
+ position: absolute;
+ top: 40px; 
+  left: 500px;
+  text-align: center;
+  }
+  .slogan_cabecera{
+  position: absolute;
+  top: 90px;
+  left: 600px;
+}
+.menu{
+ margin: 10px 10px 0 0;
+ position: unset;
+ backgroud: none;
+ height:unset;
+ border: none;
+}
+.link{
+  background:#0996D9;
+  color:white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.galeria { 
+  width: 100%;
+  height: 400px;
+  background: #11CEF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lienzo_galeria{
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+
