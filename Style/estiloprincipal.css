@@ -1,0 +1,145 @@
+.contenedor {
+  border: solid 1px black;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cabecera{
+  display: flex;
+  justify-content: space-between;
+  postion: relative;
+  height: 170px; 
+}
+
+.cabecera img{
+  width: 100px;
+}
+
+.titulo_cabecera{
+ position: absolute;
+ top: 40px;
+ left: 150px;
+}
+
+.slogan_cabecera{
+  position: absolute;
+  top: 90px;
+  left: 235px;
+}
+
+.menu{
+ margin: 10px 10px 0 0;
+ position: unset;
+ backgroud: none;
+ height:unset;
+ border: none;
+}
+
+.link{
+  background: #0D035B;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.galeria { 
+  width: 100%;
+  height: 400px;
+  background:  -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(168,197,158,1) 39%, rgba(171,208,200,1) 62%, rgba(173,217,235,1) 81%, rgba(173,217,235,1) 98%, rgba(117,137,12,1) 100%);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lienzo_galeria{
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.lienzo_contenedor{
+  display: flex;
+  width: 7000px;
+  height: 50px;
+  transition: transform 1s ease-in;
+  will-change: transform; 
+}
+
+.elemento1:checked ~ .lienzo_contenedor{
+  transform: translatex(0px);
+}
+
+.elemento2:checked ~ .lienzo_contenedor{
+  transform: translatex(-700px);
+}
+
+.elemento3:checked ~ .lienzo_contenedor{
+  transform: translatex(-1400px);
+}
+
+.controles{
+  width:100%;
+  height: 30px;
+  display:flex;
+  justify-content: center;
+  position: relative;
+  top: -26px;
+}
+
+ label{
+ margin: 5px;
+ width: 20px;
+ height:20px;
+ border-radius: 100px;
+ background: #FFC300;
+ cursor: pointer;
+ display: block;
+}
+
+.tienda{
+  display : grid;
+  grid-template: repeat(3,300px) / repeat(3, 300px);
+  justify-content: center;
+  grid-gap:16px;
+  width: 100%;
+  height: auto;
+}
+
+.tienda article {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-flow: wrap;
+  border: solid;
+  border-radius:15px;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+
+
+.espacio{
+  position: relative;
+  height: 20px;
+}
+
+.piedepagina{
+  display: flex;
+  justify-content:center;
+  position: relative;
+  heght: 105px;
+  background: -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(168,197,158,1) 39%, rgba(171,208,200,1) 62%, rgba(173,217,235,1) 81%, rgba(173,217,235,1) 98%, rgba(117,137,12,1) 100%);
+  align-content: center;
+}
+
+.piedepagina footer {
+  text-align:center;
+  color:black;
+}
+
+article:active{
+  transform: scale(1.10);
+}
